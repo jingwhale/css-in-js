@@ -1,0 +1,35 @@
+{
+    "name": "component-cssinjs",
+    "version": "0.0.1",
+    "authors": [
+        "hzzhangyunlong15 <hzzhangyunlong15@corp.netease.com>"
+    ],
+    "description": "component cssinjs project",
+    "moduleType": [
+        "globals"
+    ],
+    "keywords": [
+        "module",
+        "component",
+        "cssinjs"
+    ],
+    "license": "MIT",
+    "homepage": "",
+    "ignore": [
+        "arch",
+        "docs",
+        "test",
+        "tutorials"
+    ],
+    "dependencies": {
+        "regularjs": "git+https://g.hz.netease.com/edu-front-vendor/regularjs.git#0.5.1",
+        "nej": "git+https://g.hz.netease.com/edu-front-vendor/nej.git#0.4.5",
+        "res-base": "git+https://g.hz.netease.com/edu-frontend/res-base.git",
+        "component-base": "git+https://g.hz.netease.com/edu-frontend/component-base.git"
+    },
+    "devDependencies": {
+        "mocha": "^3.0.2",
+        "chai": "^3.5.0",
+        "cache-config": "git+https://g.hz.netease.com/edu-frontend/cache-config.git"
+    }
+}

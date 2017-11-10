@@ -1,0 +1,41 @@
+{
+	"opts": {
+        "template" : "./node_modules/ink-docstrap/template",
+	    "encoding": "utf8",              
+	    "destination": "./docs/",          
+	    "recurse": true,                 
+	    "readme": "README.md"
+	},
+    "tags": {
+        "allowUnknownTags": true
+    },
+    "source": {
+        "include": [
+            "./src"
+        ],
+        "exclude": [],
+        "includePattern": ".+\\.js$",
+        "excludePattern": ""
+    },
+    "plugins": [
+        "plugins/markdown"
+    ],
+    "templates": {
+        "cleverLinks"           : false,
+        "monospaceLinks"        : false,
+        "systemName"            : "教育产品组件开发文档",
+        "footer"                : "",
+        "copyright"             : "网易教育产品部 前端组",
+        "includeDate"           : true,
+        "navType"               : "inline",
+        "theme"                 : "cosmo",
+        "linenums"              : true,
+        "collapseSymbols"       : false,
+        "inverseNav"            : true,
+        "outputSourceFiles"     : true ,
+        "outputSourcePath"      : true,
+        "dateFormat"            : "ddd MMM Do YYYY",
+        "syntaxTheme"           : "default",
+        "sort"                  : true
+    }
+}

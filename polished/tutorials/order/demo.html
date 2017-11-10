@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DEMO - Order</title>
+        <link href="../../lib/res-base/css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <script src="../../lib/regularjs/dist/regular.js"></script>
+        <script src="../../lib/nej/src/define.js?pool=../../lib/"></script>
+        <script>
+            NEJ.define([
+                '../../src/order/ui.js'
+            ],function(Component){
+                (new Component()).$inject(document.body);
+            });
+        </script>
+    </body>
+</html>

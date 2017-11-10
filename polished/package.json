@@ -1,0 +1,39 @@
+{
+  "name": "component-cssinjs",
+  "version": "0.0.1",
+  "description": "component cssinjs project",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "css": "sass -I ./lib/ --update src:src -f --scss && sass -I ./lib/ --watch --scss --no-cache --unix-newlines src:src -t compressed",
+    "jsdoc": "jsdoc -c .jsdoc.json",
+    "component": "nei build -k 5c9a52413e0c5d3d8f6b7a98d7c1d251 -module cssinjs",
+    "coverage-report": "./node_modules/.bin/istanbul report --root test/coverage --dir test/coverage lcov",
+    "coverage-cmd-report": "./node_modules/.bin/istanbul report --root test/coverage --dir test/coverage text-summary",
+    "test": "gulp coverage && mocha-phantomjs test/coverage.html --hooks test/hook.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@g.hz.netease.com:22222/edu-frontend/component-cssinjs.git"
+  },
+  "keywords": [
+    "edu",
+    "component",
+    "cssinjs"
+  ],
+  "author": "hzzhangyunlong15 <hzzhangyunlong15@corp.netease.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "replacestream": "^4.0.2",
+    "ink-docstrap": "^1.2.1",
+    "gulp-istanbul": "^1.1.1",
+    "istanbul": "^0.4.5"
+  },
+  "dependencies": {
+    "polished": "^1.8.2",
+    "styled-components": "^2.2.3"
+  }
+}

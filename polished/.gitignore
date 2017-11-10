@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+lib
+.DS_Store
+.idea/
+.sass-cache/
+*.map
+nei.*
+test/src/
+test/coverage/
